@@ -1,0 +1,81 @@
+<Doctype html>
+<html>
+<head><title>Layout</title>
+<meta name="view-port" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0px;
+}
+.content {
+    display: flex;
+}
+header,footer,article,.fifth,.fourth,.third,.second,.first{
+background:#a0c9e8;
+text-align:center;
+}
+.fifth, .fourth, .third, .second, .first {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+    margin-right: 75px;
+}
+header.head {
+    padding: 1em;
+    margin-bottom: 15px;
+}
+footer.foot {
+    padding: 1.7em;
+    margin-top: 15px;
+}
+article.art {
+    margin-left: 15px;
+    width: 75%;
+    padding: 18%;
+}
+nav.navigation {
+    width: 18%;
+}
+.fifth:hover, .fourth:hover, .third:hover, .second:hover, .first:hover {
+    margin-right: 0px;
+}
+@media all and (max-width: 575px){
+
+.content {
+    display:block;
+}
+article.art {
+    margin-left: 0px;
+}
+
+}
+</style>
+</head>
+<body>
+<header class="head">
+head
+</header>
+<div class="content">
+		<nav class="navigation">
+		<div>
+		<div class="first">
+		</div>
+		<div class="second">
+		</div>
+		<div class="third">
+		</div>
+		<div class="fourth">
+		</div>
+		<div class="fifth">
+		</div>
+		</div>
+		</nav>
+		<article class="art">
+		article
+		</article>
+		</div>
+<footer class="foot">
+footer
+</footer>
+</body>
+</html>

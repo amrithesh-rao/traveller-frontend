@@ -1,0 +1,613 @@
+<!Doctype html>
+<html>
+<head><title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"  href="img/minilogo.png" type="image/png">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/w3.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style>
+.nf {
+    width: 10.8em;
+    position: fixed;
+    margin-top: 5%;
+}
+div#gallery {
+    margin-top: -4em;
+}
+img.icon {
+    display: none;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+body {
+    margin: 0px;
+	background:black;
+}
+.content {
+    display: flex;
+}
+.fifth, .fourth, .third, .second, .first {
+    padding-bottom: 57px;
+    margin-bottom: 10px;
+}
+header.head {
+    background: black;
+    text-align: left;
+    z-index: -1;
+    position: fixed;
+}
+footer.foot {
+    padding: 1.7em;
+    margin-top: 10px;
+    display: flex;
+    background: #393939;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+article.art {
+    width: 87.5%;
+    background: transparent;
+    text-align: center;
+    margin-top: 1em;
+}
+nav.navigation {
+    width: 11em;
+	margin-top:5%;
+}
+a{
+text-decoration:none;
+}
+img.x {
+    width: 21%;
+    margin-top: 1%;
+    background: white;
+    border-radius: 0px;
+    padding: 1%;
+}
+.call {
+    font-size: 22px;
+	color:white;
+	width:80%;
+}
+a.width{
+margin-right:45px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:white;
+}
+.second:hover, .third:hover, .fourth:hover, .fifth:hover {
+    border-right: 0.7em solid black;
+}
+.first {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 330px;
+    background-position-x: -113px;
+    background-repeat-x: no-repeat;
+    border-right: 0.7em solid black;
+}
+.second {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 276px;
+    background-position-x: -110px;
+        border-right: 0.7em solid #424242;
+	    background-repeat-x: no-repeat;
+}
+.fourth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 164px;
+    background-position-x: -111px;
+    border-right: 0.7em solid #424242;
+    background-repeat-x: no-repeat;
+}
+.fifth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 113px;
+    background-position-x: -112px;
+    border-right: 0.7em solid #424242;
+	    background-repeat-x: no-repeat;
+}
+.third {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 227px;
+    background-position-x: -113px;
+    border-right: 0.7em solid #424242;
+	    background-repeat-x: no-repeat;
+}
+.tp.tp6,.tp.tp7,.tp.tp8,.tp.car1,.tp.car2,.tp.car3,.tp.car4{
+    background-repeat: no-repeat;
+   background-size: cover;
+	color: transparent;
+}
+.ov {
+    padding: 8.6%;
+    margin-right: 10px;
+}
+.tp1{
+	background:url(img/tp1.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -48px;
+}
+.tp2{
+	background:url(img/tp2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.tp3{
+	background:url(img/tp3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.tp4{
+	background:url(img/tp4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.tp5{
+	background:url(img/tp5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.tp6{
+background:url(img/tp6.jpeg);
+}
+.tp7{
+background:url(img/tp7.jpg);
+}
+.tp8{
+background:url(img/tp8.jpg);
+}
+.car1{
+	background:url(img/car1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.car2{
+	background:url(img/car2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+.car3{
+	background:url(img/car3.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+	}
+.car4{
+	background:url(img/car4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+p.gallery {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    -webkit-margin-after: 0em;
+    text-align: left;
+}
+p.galleryhead {
+    font-size: 38px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-margin-after: -15px;
+}
+p.Q {
+    font-size: 19px;
+}
+p.A {
+    color: #a9a9a9;
+    margin-bottom: 40px;
+}
+div#faq {
+    background:#393939;
+    outline: 2px solid darkgrey;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+.tp {
+    width: 100%;
+    height: 265px;
+    margin-right: 10px;
+}
+.black {
+    color: white;
+    text-align: center;
+    height: 265px;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    padding: 0.3%;
+	}
+.black:hover {
+    opacity: 1;
+	transition: 0.5s;
+}
+.awesome {
+width:20%;
+}
+.f1{
+display:flex;margin-bottom: 10px;
+}
+.f2{
+display:flex;margin-bottom: 3em;
+}
+.phead {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-weight: bold;
+    color: white;
+}
+.bbigger{
+margin-right: 5px;
+}
+.bigger {
+    margin-right: 120px;
+}
+.bigger:hover {
+    margin-right: 5px;
+	transition:0.5s;
+}
+.carousel-inner img {
+    width: 1109px;
+    height: 573px;
+}
+.carousel-control-prev {
+    left: 11em;
+}
+.carousel-control-next {
+    right: 11em;
+}
+@media all and (max-width: 575px)
+{
+.content {
+    display:block;
+}
+article.art {
+    margin-left: 0px;
+}
+footer{
+	width:100%;
+    padding: 0 0 29px 0 !important;
+}
+.awesome {
+	margin-left:10px;
+	width:50%;
+}
+div#upperfaq {
+    padding-top: 8em;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+.call {
+    font-size: 24px;
+    color: white;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 5%;
+}
+header.head {
+    background: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+	padding-bottom: 1.6em;
+}
+img.x {
+    width: 30%;
+}
+.f1
+{
+display:block;
+margin-bottom:0px;
+}
+article.art {
+    width: 100%;
+    margin-top: 17em;
+    background: black;
+}
+.tp.car1, .tp.car2, .tp.car3, .tp.car4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    margin-bottom: 10px;
+    background-position-y: -42px;
+}
+div#faq {
+    background: #eee;
+    border: 1px solid darkgrey;
+    margin-right: 0px;
+    margin-top: 4.7em;
+}
+.f2 {
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+}
+.w3-content {
+    max-width: 100% !important;
+    margin: auto;
+}
+.awesome {
+    margin-left: 15%;
+    width: 20%;
+    display: flex;
+    margin-top: 6%;
+}
+p.gallery {
+    font-size: 23px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-margin-after: 0em;
+}
+div#uppergallery {
+    margin-top: 5em;
+}
+p.galleryhead {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    -webkit-margin-before: -2em;
+    color: white;
+}
+.tp {
+    width: 100%;
+    height: 265px;
+    margin-bottom: 10px;
+}
+.nf {
+    width: 30px;
+    position: fixed;
+    z-index: 1;
+    margin-top: -57.7%;
+    background: white;
+    height: 4%;
+    overflow: hidden;
+}
+img.icon {
+    display: block;
+}
+.nf:hover {
+    width: 100%;
+    height: 60%;
+    background: #00000069;
+}
+.fifth, .fourth, .third, .second, .first {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+	}
+.bigger {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right:0px;
+}
+.bbigger {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right: 0px;
+}
+.first {
+    background:#797979 url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 330px;
+    background-position-x: -113px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+.second {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 276px;
+    background-position-x: -110px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+.fourth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 164px;
+    background-position-x: -111px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+.fifth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 113px;
+    background-position-x: -112px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+.third {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 227px;
+    background-position-x: -113px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+div#gallery {
+    margin-top: 6em;
+}
+a.width {
+    margin-right: 15px;
+}
+.phead {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color: white;
+    background: black;
+    padding: 0%;
+    -webkit-margin-after: -2em;
+}
+}
+</style>
+</head>
+<body>
+<header class="head">
+<a href="index.html"><img  src="img/logo.png" class="x"></a>
+</header>
+<div class="content">
+		<nav class="navigation">
+		<div class="nf">
+		<img src="img/icon2.png" class="icon">
+		<div class="bbigger"><a href="index.html"><div class="first">
+		</div></a></div>
+		<div class="bigger"><a href="about.html"><div class="second">
+		</div></a></div>
+		<div class="bigger"><a href="#uppergallery"><div class="third">
+		</div></a></div>
+		<div class="bigger"><a href="#upperfaq"><div class="fourth">
+		</div></a></div>
+		<div class="bigger"><a href="contact.html"><div class="fifth">
+		</div></a></div>
+		</div>
+		</nav>
+		<article class="art">
+<div class="w3-content w3-display-container" style="max-width: 93%;">
+  <img class="mySlides" src="img/h1.jpg" style="width:100%">
+  <img class="mySlides" src="img/h2.jpg" style="width:100%">
+  <img class="mySlides" src="img/h3.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:90%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<div id="uppergallery">
+<br>
+<br>
+<br>
+<div id="gallery">
+<p class="galleryhead">Gallery</p>
+<P class="gallery">Tourist places</P>
+<br>
+<br>
+<div class="f1">
+<div class="tp tp1"><div class="black">
+<p style="padding: 25%;">
+Beluru Halebedu</p></div></div>
+<div class="tp tp2"><div class="black">
+<p style="padding: 25%;">Chikamagaluru Coorg</p></div></div>
+<div class="tp tp3"><div class="black">
+<p style="padding: 25%;">Chikamangalore Tour</p></div></div>
+<div class="tp tp4"><div class="black">
+<p style="padding: 25%;">Coorg Ooty Wayanadu</p></div></div></div>
+<div class="f2">
+<div class="tp tp5"><div class="black">
+<p style="padding: 25%;">Coorg Wayanad</p></div></div>
+<div class="tp tp6"><div class="black">
+<p style="padding: 25%;">Coorg Bekal</p></div></div>
+<div class="tp tp7"><div class="black">
+<p style="padding: 25%;">Coorg Kabini Mysore</p></div></div>
+<div class="tp tp8"><div class="black">
+<p style="padding: 25%;">Coorg Mysore</p></div></div></div>
+<p class="gallery">Our vehicals</p>
+<br>
+<br>
+<div class="f1">
+<div class="tp car1"><div class="black">
+<p style="padding: 25%;">Tempo Travelling</p></div></div>
+<div class="tp car2"><div class="black">
+<p style="padding: 25%;">Etios</p></div></div>
+<div class="tp car3"><div class="black">
+<p style="padding: 25%;">Innova</p></div></div>
+<div class="tp car4"><div class="black">
+<p style="padding: 25%;">Mini Bus</p></div></div>
+</div>
+</div></div>
+<div id="upperfaq">
+<p class="phead">Frequently asked questions</p>
+<br>
+<div id="faq">
+<div class="QA" style="margin: 15px;text-align: left;"><p class="Q">What if the car doesn't show up?</p>
+<p class="A">In case the vehicle you booked doesn't show up, we will offer you a full refund immediately.</p>
+<p class="Q">What are the booking cancellation charges?</p>
+<p class="A">You may cancel the booking 24 hour prior to the time of journey, without any cancellation charges. In case cancellation is requested within 24 hours of the pick-up time, then following rules will apply:
+<p class="A">1. Multi Day trip: 25% of the booking amount.</p>
+<p class="A">2. Single Day trip: 10% of booking amount.</p></p>
+<p class="Q">When will I get the refund?</p>
+<p class="A">If you are eligible for refunds based on our Cancellation policy, you will recieve a email and text SMS from us. Refund will be remitted back to you in 5-7 working days.</p>
+<p class="Q">I have a problem, who do I contact?</p>
+<p class="A">In case of any issues, write to us at booking@srikateeltravels.com or call us at +91 82 7782 2666.</p>
+
+<p class="Q">What if the car shows up late?</p>
+<p class="A">We try our best to ensure our drivers reach our customers on time. But in case of delays, do call us and we will help you out by either providing an alternate vehicle or giving you a full refund.</p>
+</div></div></div>
+		</article>
+		</div>
+<footer class="foot">
+<div class="call">Call:8792158604</div>
+<div class="awesome">
+<a href="https://www.facebook.com" target="_blank" class="width"><i class="fa fa-facebook-f"></i></a>
+<a href="https://plus.google.com"target="_blank" class="width"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.twitter.com" target="_blank" class="width"><i class="fa fa-twitter-square"></i></a>
+</div>
+</footer>
+</body>
+</html>

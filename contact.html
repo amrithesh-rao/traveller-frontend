@@ -1,0 +1,335 @@
+<!Doctype html>
+<html>
+<head><title>Contact US</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"  href="img/minilogo.png" type="image/png">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+.second:hover, .fifth:hover, .fourth:hover, .fifth:hover {
+    border-right: 0.7em solid black;
+}
+body {
+    margin: 0px;
+	background:black;
+}
+tr {
+    text-align: center;
+}
+img.icon {
+    display: none;
+}
+table{
+width:100%;
+}
+.content {
+    display: flex;
+}
+.fifth, .fourth, .third, .second, .first {
+    padding-bottom: 57px;
+    margin-bottom: 10px;
+}
+header.head {
+    background: black;
+    text-align: left;
+    z-index: -1;
+    position: fixed;
+}
+footer.foot {
+    padding: 1.7em;
+    margin-top: 10px;
+    display: flex;
+    background: #393939;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+article.art {
+    width: 87.5%;
+    text-align: center;
+    margin-top: 1em;
+    border: 1px solid black;
+    outline: 1px solid white;
+    background:#393939;
+}
+nav.navigation {
+    width: 11em;
+	margin-top:5%;
+}
+a{
+text-decoration:none;
+}
+img.x {
+    width: 21%;
+    margin-top: 1%;
+    background: white;
+    border-radius: 0px;
+    padding: 1%;
+}
+.call {
+    font-size: 22px;
+	color:white;
+	width:80%;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:white;
+}
+.first {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 330px;
+    background-position-x: -113px;
+    border-right: 0.7em solid #424242;
+	    background-repeat-x: no-repeat;
+}
+.second {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 276px;
+    background-position-x: -110px;
+	    background-repeat-x: no-repeat;
+  border-right: 0.7em solid #424242;
+}
+.fourth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 164px;
+    background-position-x: -111px;
+    border-right: 0.7em solid #424242;
+	    background-repeat-x: no-repeat;
+}
+.fifth {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 113px;
+    background-position-x: -112px;
+    border-right: 0.7em solid black;
+	    background-repeat-x: no-repeat;
+}
+.third {
+    background: white url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 227px;
+    background-position-x: -113px;
+    box-shadow: 1px 1px 1px 1px grey;
+	    background-repeat-x: no-repeat;
+}
+.bbigger{
+margin-right: 5px;
+}
+.bigger {
+    margin-right: 120px;
+}
+.bigger:hover {
+    margin-right: 5px;
+	transition:0.5s;
+	}
+.nf {
+    width: 10.8em;
+    position: fixed;
+    margin-top: 5%;
+}
+a.width{
+margin-right:45px;
+}
+@media all and (max-width: 575px)
+{
+.content {
+    display:block;
+}
+article.art {
+    margin-left: 0px;
+}
+footer{
+	width:100%;
+    padding: 0 0 29px 0 !important;
+}
+.awesome {
+	margin-left:10px;
+	width:50%;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+.call {
+    font-size: 24px;
+    color: white;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 5%;
+}
+header.head {
+    background: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+	padding-bottom: 1.6em;
+}
+img.x {
+    width: 30%;
+}
+.f1
+{
+display:block;
+margin-bottom:0px;
+}
+article.art {
+    width: 96%;
+	margin-left:2%;
+    background: white;
+    margin-top: 7em;
+}
+.tp.car1, .tp.car2, .tp.car3, .tp.car4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    margin-bottom: 10px;
+    background-position-y: -42px;
+}
+div#faq {
+    background: #eee;
+    border: 1px solid darkgrey;
+    margin-right: 0px;
+}
+.f2 {
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+}
+.w3-content {
+    max-width: 100% !important;
+    margin: auto;
+}
+.awesome {
+    margin-left: 10%;
+    width: 20%;
+    display: flex;
+    margin-top: 6%;
+}
+p.gallery {
+    font-size: 23px;
+    font-family: monospace;
+    color: #0f4de0;
+	text-align: center;
+}
+div#uppergallery {
+    margin-top: 5em;
+}
+p.galleryhead {
+    font-size: 30px;
+    font-family: monospace;
+    color: #4d00ff;
+    text-align: center;
+    text-shadow: 5px 3px 0px #cee1f1;
+}
+.tp {
+    width: 100%;
+    height: 265px;
+    margin-bottom: 10px;
+}
+p.galleryhead {
+    font-size: 30px;
+    font-family: monospace;
+    color: #4d00ff;
+    text-align: center;
+    text-shadow: 5px 3px 0px #cee1f1;
+    -webkit-margin-before: -2em;
+}
+.nf {
+    width: 30px;
+    position: fixed;
+    z-index: 1;
+    margin-top:-12.7%;
+    background: white;
+    height: 4%;
+    overflow: hidden;
+}
+img.icon {
+    display: block;
+}
+.nf:hover {
+    width: 100%;
+    height: 60%;
+    background: #00000069;
+}
+.fifth, .fourth, .third, .second, .first {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+	}
+.bigger {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right:0px;
+}
+.bbigger {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right: 0px;
+}
+a.width {
+    margin-right: 25%;
+}
+.fifth {
+    background: #797979 url(img/sprite.png);
+    background-size: 356px;
+    background-position-y: 113px;
+    background-position-x: -112px;
+    box-shadow: 1px 1px 1px 1px grey;
+    background-repeat-x: no-repeat;
+}
+}
+</style>
+</head>
+<body>
+<header class="head">
+<img  src="img/logo.png" class="x">
+</header>
+<div class="content">
+	<nav class="navigation">
+		<div class="nf">
+		<img src="img/icon2.png" class="icon">
+		<div class="bigger"><a href="index.html"><div class="first">
+		</div></a></div>
+		<div class="bigger"><a href="about.html"><div class="second">
+		</div></a></div>
+		<div class="bigger"><a href="index.html#uppergallery"><div class="third">
+		</div></a></div>
+		<div class="bigger"><a href="index.html#upperfaq"><div class="fourth">
+		</div></a></div>
+		<div class="bbigger"><a href="contact.html"><div class="fifth">
+		</div></a></div>
+		</div>
+		</nav>
+		<article class="art">
+		<p style="
+	text-align: center;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;">CONTACT US</p>
+<table border="0">
+<tr><td>Office address:</td><td><p>5th floar,manasa tower,</p><p>Traveller,Mangalore</p><p>574147</p></td></tr>
+<tr><td>Contact number:</td><td><p>98265185714</p><p>987367483826</p></td></tr>
+</table>
+<p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.491953545363!2d74.83946641437412!3d12.876056890918585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4f80113c3b%3A0x2a98ff6bb963f8d1!2sda+Vinci+International+Institute+of+Design!5e0!3m2!1sen!2sin!4v1527940903681" width="90%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>	</p>
+		</article>
+		</div>
+<footer class="foot">
+<div class="call">Call:8792158604</div><div class="awesome"><a href="https://www.facebook.com" target="_blank" class="width"><i class="fa fa-facebook-f"></i></a><a href="https://plus.google.com"target="_blank"class="width"><i class="fa fa-google-plus"></i></a><a href="https://www.twitter.com" target="_blank"class="width"><i class="fa fa-twitter-square"></i></a></div>
+</footer>
+</body>
+</html>
